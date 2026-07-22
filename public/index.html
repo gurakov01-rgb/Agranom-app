@@ -46,7 +46,7 @@
   input[type=file]{display:none;}
   .actions{display:flex; gap:10px; justify-content:center; margin-top:18px; flex-wrap:wrap;}
   button{font-family:'Inter',sans-serif; font-weight:600; font-size:13.5px; border-radius:10px; border:none; padding:11px 18px; cursor:pointer; transition:transform .12s ease, background .15s ease;}
-[22.07.2026 23:50] GʻAFUR URAKOV: button:active{transform:scale(.98);}
+[23.07.2026 2:06] GʻAFUR URAKOV: button:active{transform:scale(.98);}
   .btn-primary{background:var(--forest); color:#fff;}
   .btn-primary:hover{background:var(--forest-deep);}
   .btn-primary:disabled{background:#A9B8AE; cursor:not-allowed;}
@@ -90,7 +90,7 @@
 
   .safety-box{margin-top:20px; background:#FCEDE9; border:1px solid var(--rust-soft); border-radius:12px; padding:14px 16px; font-size:12.5px; color:var(--rust); line-height:1.55;}
   .error-box{margin-top:18px; background:#FCEDE9; border:1px solid var(--rust-soft); color:var(--rust); padding:14px 16px; border-radius:12px; font-size:13.5px; text-align:center;}
-[22.07.2026 23:50] GʻAFUR URAKOV: footer.note{margin-top:36px; text-align:center; font-size:11.5px; color:#9AA79D; font-family:'IBM Plex Mono',monospace;}
+[23.07.2026 2:06] GʻAFUR URAKOV: footer.note{margin-top:36px; text-align:center; font-size:11.5px; color:#9AA79D; font-family:'IBM Plex Mono',monospace;}
 </style>
 </head>
 <body>
@@ -186,7 +186,7 @@ fileInput.addEventListener('change', (e) => {
 const DORI_ZAMBURUG = [
   {n:"Bordo suyuqligi (mis kuporosi + ohak)", i:"Keng ta'sirli, profilaktik hamda bahor-kuzgi ishlov uchun; qadoqdagi yo'riqnomaga qat'iy amal qiling"},
   {n:"Mis xlorokisi (ХОМ)", i:"Ko'plab zamburug' va bakterial kasalliklarga qarshi qo'llaniladigan mis asosidagi vosita"},
-[22.07.2026 23:50] GʻAFUR URAKOV: {n:"Sistemali fungitsid (masalan, Ridomil Gold MC, Skor yoki Topaz turkumidagi vositalar)", i:"Kuchliroq zararlanishda qo'llaniladi; agrodo'kondan mavjudini so'rab, yorliqdagi me'yorga rioya qiling"},
+[23.07.2026 2:06] GʻAFUR URAKOV: {n:"Sistemali fungitsid (masalan, Ridomil Gold MC, Skor yoki Topaz turkumidagi vositalar)", i:"Kuchliroq zararlanishda qo'llaniladi; agrodo'kondan mavjudini so'rab, yorliqdagi me'yorga rioya qiling"},
   {n:"Kollid oltingugurt / oltingugurt asosidagi preparat", i:"Ayniqsa un shudringga qarshi samarali, past zaharlilikka ega"},
 ];
 const DORI_BAKTERIYA = [
@@ -257,7 +257,7 @@ function renderReport(aiResult){
   const matched = !isHealthy && !isUnknown ? findInKB(aiResult.ekin, aiResult.nomi) : null;
 
   const nomi = matched ? matched.nomi : (aiResult.nomi || "Aniqlanmadi");
-[22.07.2026 23:50] GʻAFUR URAKOV: const ekin = matched ? matched.ekin : (aiResult.ekin || "");
+[23.07.2026 2:06] GʻAFUR URAKOV: const ekin = matched ? matched.ekin : (aiResult.ekin || "");
   const turi = matched ? matched.turi : (aiResult.turi || "");
   const alomat = matched ? matched.alomat : (aiResult.tavsif || "—");
   const chora = matched ? matched.chora : (aiResult.tavsif_chora || "Aniq tavsiya uchun mahalliy agronomga murojaat qiling");
